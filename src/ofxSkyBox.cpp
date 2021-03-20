@@ -22,6 +22,13 @@ void ofxSkyBox::load(){
 
 }
 
+void ofxSkyBox::loadCustom(string path, int size){
+
+    cubeshader.load("skybox");
+	cubeMap.loadFromImage(size,path);
+
+}
+
 void ofxSkyBox::draw() {
 
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
@@ -51,7 +58,7 @@ void ofxSkyBox::draw() {
     	glPushMatrix();
 
 
-	 Draw_Skybox(0, 0, 0, 100, 100, 100);
+	 Draw_Skybox(0, 0, 0, 128, 128, 128);
 
 
 

@@ -43,6 +43,7 @@ public:
 	}
 	
 	void loadFromOfImages( ofImage pos_x, ofImage pos_y, ofImage pos_z, ofImage neg_x,ofImage neg_y,ofImage neg_z);
+	void loadFromImage(int size, string img_path);
 	
 	void bindMulti( int pos )
 	{

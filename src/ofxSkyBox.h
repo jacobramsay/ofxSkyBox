@@ -22,6 +22,7 @@ class ofxSkyBox
 public:
 
 ofxSkyBox();
+    void loadCustom(string path, int size);
     void load();
 
 	void draw();
