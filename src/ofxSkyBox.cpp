@@ -29,7 +29,7 @@ void ofxSkyBox::loadCustom(string path, int size){
 
 }
 
-void ofxSkyBox::draw() {
+void ofxSkyBox::draw(float posX, float posY, float posZ, float size) {
 
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
@@ -57,8 +57,7 @@ void ofxSkyBox::draw() {
     	glMatrixMode(GL_MODELVIEW);
     	glPushMatrix();
 
-
-	 Draw_Skybox(0, 0, 0, 128, 128, 128);
+	 Draw_Skybox(posX,posY, posZ, size, size, size);
 
 
 

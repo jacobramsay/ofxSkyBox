@@ -25,7 +25,7 @@ ofxSkyBox();
     void loadCustom(string path, int size);
     void load();
 
-	void draw();
+	void draw(float posX, float posY, float posZ, float size);
 
 
 
